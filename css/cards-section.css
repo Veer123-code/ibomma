@@ -1,0 +1,70 @@
+/* card  styles */
+.single-card{
+    width:100%;
+    height:100%;
+    cursor: pointer;
+    
+}
+.single-card .img-container{
+    aspect-ratio: 200/300;
+    overflow: hidden;
+}
+.single-card .img-container img{
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+    border-radius: 6px;
+}
+.single-card .card-title .movie-name h4{
+    color:aliceblue;
+    text-transform: capitalize;
+    margin-left:10px;
+    margin-top: 10px;
+
+}
+.single-card .card-title .movie-name {
+    text-decoration: none;
+}
+.single-card .card-year .movie-year p{
+    color:black;
+    display: inline-block;
+    background: #1c1c1c;
+    padding: 5px 10px;
+    margin-left:10px;
+    margin-top: 5px;
+    margin-bottom:20px;
+    color:#fcfc10;
+    font-size: 13px;
+    
+
+}
+@media screen and (min-width:992px){
+    .single-card .img-container{
+        aspect-ratio:230/390;
+    }
+
+}
+.six-column-layouts{
+    display:grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap:20px;
+
+}
+@media screen and (min-width:480px){
+    .six-column-layouts{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media screen and (min-width:769px){
+    .six-column-layouts{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media screen and (min-width:992px){
+    .six-column-layouts{
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+}
+
+
+/* card  styles  end*/

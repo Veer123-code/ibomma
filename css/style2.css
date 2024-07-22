@@ -1,0 +1,348 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0f0f0f;
+    color:#cacabe; 
+  
+}
+.text-center{
+    text-align: center;
+}
+.wrapper{
+    max-width:1250px ;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+
+/* sidebar styles */
+.sidebar-container{
+    background-color: #1c1c1c;
+    width:100%;
+    height:250px;
+    position: fixed;
+    top:0;
+    left:0;
+
+}
+.sidebar-container .close-button img{
+    width:60px;
+}
+.sidebar-container .side-header{
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* sidebar styles end */
+
+/* adds on  */
+/* wifi-section start  */
+
+.symbol{
+    margin-top:30px;
+}
+.symbol .fa-wifi{
+    color:#fcfc10;
+    font-size: 30px;
+    margin-left: -48px;
+    transform: translateX(60px) rotate(45deg);
+  
+}
+
+.symbol span .card-year{
+    display: inline;
+    color:#fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    margin-left: 65px;    
+}
+.rough-img img{
+    width:200px;
+
+}
+/* wifi symbol end */
+@media screen and (min-width:992px){
+    .symbol .fa-wifi{
+        margin-left: 5px;
+
+    }
+    .rough-img img{
+        margin-left: 50px;
+
+    } 
+}
+/* looking styles start */
+
+#looking-more {
+    width:100%;
+    padding: 30px;
+    border-radius: 5px;
+    outline: 1px solid #585857;
+    padding-left: 20px;
+    padding-right:20px ;
+    background-color: #1c1c1c;
+    
+}
+#looking-more .looking-heading{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 28px;
+    padding-top:-80px;
+    padding:10px;
+}
+#looking-more .looking-title{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-bottom: 12px;
+}
+#looking-more  .container .input-form{
+    padding: 20px 25%;
+    outline: none;
+
+}
+.search{
+   text-align: center;
+   padding: 10px;
+}
+.search .box{
+    height:30px;
+
+}
+.search .btn{
+    border: none;
+    outline: none;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+/* looking styles end */
+
+/* adds omn end */
+
+/* single featured */
+
+.single-featured-container{
+    width:100%;
+   
+
+
+}
+.single-featured-container .single-featured-image{
+    width:100%;
+    overflow: hidden;
+    border-radius:10px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    margin-left: 30px;
+    
+
+}
+
+
+.single-featured-image img{
+    width:250px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+    padding: 20px -60px;
+}
+.single-featured-text-component .about-info{
+    display:flex; 
+    flex-direction: column; 
+    gap:10px;
+    
+    
+}
+.single-featured .featured-center{
+    margin-left: -30px;
+}
+.single-featured{
+    display: flex;
+    justify-items: space-around;
+    align-items: center; 
+    
+}
+.single-featured-text-component, .single-featured-image{
+    flex:0 0 calc(60% - 50px); 
+} 
+
+
+.single-featured-container .about-info {
+    font-size: 13px;
+    text-transform: capitalize;
+    color:#979797;
+    margin-left: 25px;
+
+
+}
+@media screen and (min-width:992px){
+    .featured-center{
+        position: relative;
+        top:0;
+        bottom:0;
+
+    }
+    .single-featured-container .about-info{
+        margin-left: -400px;
+        gap:20px;
+        position: absolute;
+        top:-130px;
+        left:20px;
+    }
+}
+
+.single-featured-container .about-info  h2{
+    color:#cacabe;
+    font-size: 28px;
+}
+.single-featured-container .about-info .year{
+    color:aliceblue;
+}
+.single-featured-container .about-info .gener{
+    color:aliceblue;
+}
+.single-featured-container .about-info .cast{
+    color:aliceblue;
+   
+}
+.single-featured-container .about-info .director{
+    color:aliceblue;
+}
+
+.single-featured-container .about-info i{
+    color:#979797;
+}
+.single-featured-container .about-info .name{
+    color:#979797;
+    
+
+}
+.single-featured-container .about-info .d-name{
+    color:#979797;
+    
+
+}
+/* main end */
+
+/* btn styles */
+.main-button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+.main-button .trai-btn{
+    text-transform: uppercase;
+    background-color: #272727;
+    border:none;
+    color:#fcfcfc;
+    outline: none;
+    padding: 10px 40px;
+    margin-left: 30px;
+    border-radius:5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    
+
+}
+.main-button .trai-btn i,.main-button .m-btn i{
+    display: inline-block;
+    padding: 10px;
+}
+.main-button .m-btn{
+    text-transform: uppercase;
+    margin-left: 50px;
+    padding: 10px 30px;
+    border-radius:5px;
+    outline: none;
+    border: none;
+    background-color: #fcfc0a;
+    margin-bottom: 10px;
+    cursor: pointer;
+
+
+}
+@media screen and (min-width:992px){
+    .main-button{
+        position:relative;
+        top:-90px;
+        left:180px;
+        bottom:0;
+        
+        display: flex;
+        justify-content: center;
+        
+
+
+    }
+    .main-button-center{
+        position:absolute;
+        top:10px;
+        left:250px;
+        
+    }
+    
+
+    
+
+}
+/* btn close */
+@media screen and (min-width:992px){
+    .main-container{
+        margin-top: 100px;
+    }
+    .main-container .main-container-img img{
+        width:100%;
+        height:100%;
+    
+    }
+
+}
+.main-container{
+    width:100%;
+
+}
+.main-container .main-container-img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    aspect-ratio: 300/180;
+    margin-left: 20px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+.main-container .main-container-img img{
+    width:90%;
+    height:90%;
+  
+
+}
+
+/* main-content */
+
+.main-content{
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+.main-content p{
+    display: inline-block;
+}
+.main-content .main-txt{
+    color: #fcfc0a;
+}
+.main-content p{
+    color:#979797;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+
+
+
